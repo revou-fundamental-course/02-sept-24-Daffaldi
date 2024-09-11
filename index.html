@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Triangle Area & Perimeter Calculator</h1>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <h2>Calculate Triangle Properties</h2>
+
+            <div class="input-group">
+                <label for="sideA">Side A (cm):</label>
+                <input type="number" id="sideA" min="0" required placeholder="Enter side A">
+            </div>
+
+            <div class="input-group">
+                <label for="sideB">Side B (cm):</label>
+                <input type="number" id="sideB" min="0" required placeholder="Enter side B">
+            </div>
+
+            <div class="input-group">
+                <label for="sideC">Side C (cm):</label>
+                <input type="number" id="sideC" min="0" required placeholder="Enter side C">
+            </div>
+
+            <button class="btn" onclick="calculate()">Calculate</button>
+
+            <div id="results">
+                <p id="areaResult">Area: -</p>
+                <p id="perimeterResult">Perimeter: -</p>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <h2>Triangle Visualization</h2>
+            <canvas id="triangleCanvas" width="400" height="400"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Triangle Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
